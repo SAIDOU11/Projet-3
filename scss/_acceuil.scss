@@ -1,2 +1,6 @@
-img {
+header {
+  &__paragraph {
+    color: red;
+    font-size: size($font-sizes, size-text);
+  }
 }

@@ -1,4 +1,15 @@
-img {
-  height: 100%;
-  width: 100%;
-}/*# sourceMappingURL=menu-1.css.map */
+/* .main-content {
+  min-height: 100%;
+  margin-bottom: -500px;
+}
+
+.main-content::after {
+  content: "";
+  display: block;
+}
+
+.footer,
+.main-content::after {
+  height: 180px;
+}
+*//*# sourceMappingURL=menu-1.css.map */

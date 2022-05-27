@@ -1,23 +1,28 @@
+@import "resets";
 @import "variables";
 @import "menu-1";
 @import "menu-2";
+@import "mixin";
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+html,
 body {
+  height: 100%;
   font-family: "Roboto", sans-serif;
 }
+
 header {
-  height: 100px;
+  @include flexCentre;
+  height: 80px;
   width: 100%;
-  background: url(/images/logo/ohmyfood.png) center no-repeat;
 }
+
 nav {
   height: 300px;
   width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .title {
@@ -27,16 +32,14 @@ nav {
 footer {
   padding-left: 20px;
   padding-top: 20px;
-  position: fixed;
-  bottom: 0px;
-  line-height: 1.5em;
-  height: 200px;
+  height: 180px;
   width: 100%;
   background-color: rgb(65, 62, 62);
   color: #fff;
 }
 
 .sec-footer {
+  margin-top: 10px;
   &__contact {
     a {
       color: #fff;
