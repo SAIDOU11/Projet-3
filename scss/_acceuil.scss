@@ -1,6 +1,20 @@
+@mixin flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   &__paragraph {
     color: red;
     font-size: size($font-sizes, size-text);
   }
+}
+
+.reservation {
+  height: 100%;
+  width: 100%;
+
+  @include flexCentre;
+  background-color: rgb(168, 166, 166);
 }
