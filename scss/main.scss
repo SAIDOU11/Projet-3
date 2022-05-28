@@ -22,7 +22,7 @@ body {
 }
 
 footer,
-.page-content::after {
+.main-content::after {
   height: 100px;
 }
 
@@ -30,15 +30,6 @@ header {
   @include flexCentre;
   height: 80px;
   width: 100%;
-}
-
-nav {
-  height: 300px;
-  width: 100%;
-  img {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 .title {

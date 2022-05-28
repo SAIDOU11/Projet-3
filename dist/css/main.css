@@ -4,6 +4,28 @@
   margin: 0;
 }
 
+header {
+  box-shadow: 2px 1px 2px rgb(124, 123, 123);
+  position: relative;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 50px;
+  gap: 1rem;
+  color: rgb(46, 44, 44);
+  font-weight: 700;
+}
+.location__icon {
+  font-size: 1.2rem;
+}
+.location__icon__city {
+  font-size: 16px;
+}
+
 /* .main-content {
   min-height: 100%;
   margin-bottom: -500px;
@@ -40,7 +62,7 @@ body {
 }
 
 footer,
-.page-content::after {
+.main-content::after {
   height: 100px;
 }
 
@@ -49,15 +71,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 80px;
-  width: 100%;
-}
-
-nav {
-  height: 300px;
-  width: 100%;
-}
-nav img {
-  height: 100%;
   width: 100%;
 }
 

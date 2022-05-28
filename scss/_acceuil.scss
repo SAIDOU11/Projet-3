@@ -5,16 +5,22 @@
 }
 
 header {
-  &__paragraph {
-    color: red;
-    font-size: size($font-sizes, size-text);
-  }
+  box-shadow: 2px 1px 2px rgb(124, 123, 123);
+  position: relative;
 }
 
-.reservation {
-  height: 100%;
-  width: 100%;
-
+.location {
   @include flexCentre;
-  background-color: rgb(168, 166, 166);
+  background-color: #f2f2f2ff;
+  height: 50px;
+  gap: 1rem;
+  color: rgb(46, 44, 44);
+  font-weight: 700;
+  &__icon {
+    font-size: 1.2rem;
+
+    &__city {
+      font-size: 16px;
+    }
+  }
 }
