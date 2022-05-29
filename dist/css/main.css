@@ -14,9 +14,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-  height: 50px;
+  height: 60px;
   gap: 1rem;
-  color: rgb(46, 44, 44);
+  color: rgb(54, 52, 52);
   font-weight: 700;
 }
 .location__icon {
@@ -24,6 +24,28 @@ header {
 }
 .location__icon__city {
   font-size: 16px;
+}
+
+.reservation {
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+}
+.reservation__title {
+  margin: 10px;
+}
+.reservation__paragraph {
+  margin: 10px;
+  font-weight: 300;
+}
+.reservation__button {
+  margin: 10px;
+  padding: 10px;
+  background-color: purple;
+  border-radius: 20px 20px;
+  border: none;
+  color: white;
+  font-size: 18px;
 }
 
 /* .main-content {
@@ -71,6 +93,15 @@ header {
   justify-content: center;
   align-items: center;
   height: 80px;
+  width: 100%;
+}
+
+nav {
+  height: 300px;
+  width: 100%;
+}
+nav img {
+  height: 100%;
   width: 100%;
 }
 

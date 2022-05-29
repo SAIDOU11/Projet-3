@@ -11,16 +11,37 @@ header {
 
 .location {
   @include flexCentre;
-  background-color: #f2f2f2ff;
-  height: 50px;
+  background-color: $bgc-couleur-primaire;
+  height: 60px;
   gap: 1rem;
-  color: rgb(46, 44, 44);
+  color: rgb(54, 52, 52);
   font-weight: 700;
   &__icon {
     font-size: 1.2rem;
-
     &__city {
       font-size: 16px;
     }
+  }
+}
+
+.reservation {
+  padding: 10px;
+  text-align: center;
+  background-color: $bgc-couleur-secondaire;
+  &__title {
+    margin: 10px;
+  }
+  &__paragraph {
+    margin: 10px;
+    font-weight: 300;
+  }
+  &__button {
+    margin: 10px;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 20px 20px;
+    border: none;
+    color: white;
+    font-size: 18px;
   }
 }
