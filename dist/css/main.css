@@ -35,6 +35,8 @@ header {
   margin: 10px;
 }
 .reservation__paragraph {
+  color: #5c5757;
+  font-size: 15px;
   margin: 10px;
   font-weight: 300;
 }
@@ -53,6 +55,29 @@ header {
 }
 .reservation__button:hover {
   transform: scale(1.02);
+}
+
+.fonction {
+  height: 300px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.fonction__choix {
+  display: flex;
+  background-color: #fafafa;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  align-items: center;
+}
+.fonction__icon {
+  color: rgb(94, 89, 89);
+  padding: 15px;
+}
+.fonction__iconviolet {
+  padding: 12px;
+  color: #9356dc;
 }
 
 /* .main-content {

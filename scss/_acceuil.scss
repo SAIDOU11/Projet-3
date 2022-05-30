@@ -5,15 +5,15 @@
 }
 
 header {
-  box-shadow: 2px 1px 2px rgb(124, 123, 123);
+  box-shadow: 2px 1px 2px rgb(163, 162, 162);
   position: relative;
 }
 
 .location {
   @include flexCentre;
   background-color: $bgc-couleur-primaire;
-  height: 60px;
-  gap: 1rem;
+  height: 45px;
+  gap: 1.5rem;
   color: rgb(54, 52, 52);
   font-weight: 700;
   &__icon {
@@ -32,6 +32,8 @@ header {
     margin: 10px;
   }
   &__paragraph {
+    color: #5c5757;
+    font-size: 15px;
     margin: 10px;
     font-weight: 300;
   }
@@ -45,7 +47,7 @@ header {
     );
     box-shadow: 1px 3px 9px 5px;
     border-radius: 20px 20px;
-    box-shadow: 1px 1px 5px 1px rgba(#000000, 0.5);
+    box-shadow: 1px 1px 2px 1px rgba($bgc-couleur-secondaire 0.5);
     border: none;
     color: white;
     font-size: 18px;
@@ -54,5 +56,35 @@ header {
     &:hover {
       transform: scale(1.02);
     }
+  }
+}
+
+.fonction {
+  font-weight: 700;
+  font-size: 18px;
+
+  &__title {
+    margin: 15px;
+  }
+
+  &__choix {
+    display: flex;
+    background-color: $bgc-couleur-secondaire;
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba($bgc-couleur-secondaire 0.5);
+    padding: 5px;
+    align-items: center;
+    margin: 20px;
+  }
+
+  &__icon {
+    color: rgb(94, 89, 89);
+    padding: 20px;
+  }
+  &__iconviolet {
+    padding: 12px;
+    color: $couleur-primaire;
   }
 }
