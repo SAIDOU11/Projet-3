@@ -40,12 +40,19 @@ header {
 }
 .reservation__button {
   margin: 10px;
-  padding: 10px;
-  background-color: purple;
+  margin-bottom: 15px;
+  padding: 13px;
+  background-image: linear-gradient(#ff79da 10%, #9356dc);
+  box-shadow: 1px 3px 9px 5px;
   border-radius: 20px 20px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
   font-size: 18px;
+  transition: all 200ms;
+}
+.reservation__button:hover {
+  transform: scale(1.02);
 }
 
 /* .main-content {

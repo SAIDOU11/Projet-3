@@ -37,11 +37,22 @@ header {
   }
   &__button {
     margin: 10px;
-    padding: 10px;
-    background-color: purple;
+    margin-bottom: 15px;
+    padding: 13px;
+    background-image: linear-gradient(
+      $couleur-secondaire 10%,
+      $couleur-primaire
+    );
+    box-shadow: 1px 3px 9px 5px;
     border-radius: 20px 20px;
+    box-shadow: 1px 1px 5px 1px rgba(#000000, 0.5);
     border: none;
     color: white;
     font-size: 18px;
+    transition: all 200ms;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
