@@ -12,7 +12,7 @@ header {
 .location {
   @include flexCentre;
   background-color: $bgc-couleur-primaire;
-  height: 45px;
+  height: 50px;
   gap: 1.5rem;
   color: rgb(54, 52, 52);
   font-weight: 700;
@@ -25,7 +25,7 @@ header {
 }
 
 .reservation {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   background-color: $bgc-couleur-secondaire;
   &__title {
@@ -47,7 +47,7 @@ header {
     );
     box-shadow: 1px 3px 9px 5px;
     border-radius: 20px 20px;
-    box-shadow: 1px 1px 2px 1px rgba($bgc-couleur-secondaire 0.5);
+
     border: none;
     color: white;
     font-size: 18px;
@@ -64,19 +64,18 @@ header {
   font-size: 18px;
 
   &__title {
-    margin: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
   }
 
-  &__choix {
-    display: flex;
+  &__list {
     background-color: $bgc-couleur-secondaire;
     width: 80%;
-    border-radius: 15px;
+    border-radius: 1.25rem;
     border: none;
-    box-shadow: 1px 1px 2px 1px rgba($bgc-couleur-secondaire 0.5);
-    padding: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
     align-items: center;
-    margin: 20px;
+    margin: 30px;
   }
 
   &__icon {
@@ -84,7 +83,6 @@ header {
     padding: 20px;
   }
   &__iconviolet {
-    padding: 12px;
     color: $couleur-primaire;
   }
 }

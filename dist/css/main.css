@@ -1,11 +1,12 @@
-* {
+html,
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 header {
-  box-shadow: 2px 1px 2px rgb(124, 123, 123);
+  box-shadow: 2px 1px 2px rgb(163, 162, 162);
   position: relative;
 }
 
@@ -14,8 +15,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-  height: 60px;
-  gap: 1rem;
+  height: 50px;
+  gap: 1.5rem;
   color: rgb(54, 52, 52);
   font-weight: 700;
 }
@@ -27,7 +28,7 @@ header {
 }
 
 .reservation {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   background-color: #fafafa;
 }
@@ -47,7 +48,6 @@ header {
   background-image: linear-gradient(#ff79da 10%, #9356dc);
   box-shadow: 1px 3px 9px 5px;
   border-radius: 20px 20px;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
   font-size: 18px;
@@ -58,45 +58,28 @@ header {
 }
 
 .fonction {
-  height: 300px;
   font-weight: 700;
   font-size: 18px;
 }
-.fonction__choix {
-  display: flex;
+.fonction__title {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.fonction__list {
   background-color: #fafafa;
   width: 80%;
-  border-radius: 15px;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-  padding: 5px;
+  border-radius: 1.25rem;
+  border: none;
+  box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
   align-items: center;
+  margin: 30px;
 }
 .fonction__icon {
   color: rgb(94, 89, 89);
-  padding: 15px;
+  padding: 20px;
 }
 .fonction__iconviolet {
-  padding: 12px;
   color: #9356dc;
-}
-
-/* .main-content {
-  min-height: 100%;
-  margin-bottom: -500px;
-}
-
-.main-content::after {
-  content: "";
-  display: block;
-}
-
-.footer,
-.main-content::after {
-  height: 180px;
-}
-*/
-nav {
-  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center top;
 }
 
 html,
@@ -105,35 +88,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main-content {
-  min-height: 100%;
-  margin-bottom: 20px;
-}
-
-.main-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.main-content::after {
-  height: 100px;
-}
-
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
-  width: 100%;
-}
-
-nav {
-  height: 300px;
-  width: 100%;
-}
-nav img {
-  height: 100%;
   width: 100%;
 }
 
@@ -145,7 +104,7 @@ footer {
   padding-left: 20px;
   padding-top: 20px;
   width: 100%;
-  height: 180px;
+  height: 100px;
   background-color: rgb(65, 62, 62);
   color: #fff;
 }
