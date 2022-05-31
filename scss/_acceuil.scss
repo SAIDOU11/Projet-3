@@ -64,13 +64,18 @@ header {
   font-size: 18px;
 
   &__title {
-    margin-top: 40px;
     margin-left: 20px;
+    margin-top: 40px;
+  }
+  &__ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   &__list {
     background-color: $bgc-couleur-secondaire;
-    width: 80%;
+    width: 85%;
     border-radius: 1.25rem;
     border: none;
     box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
