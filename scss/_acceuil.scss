@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+body {
+  counter-reset: x;
+}
+
 header {
   box-shadow: 2px 1px 2px rgb(163, 162, 162);
   position: relative;
@@ -80,7 +84,26 @@ header {
     border: none;
     box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
     align-items: center;
-    margin: 30px;
+    margin: 32px;
+    position: relative;
+
+    &::before {
+      counter-increment: x;
+      content: counter(x);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 10px;
+      padding: 3px;
+      background-color: $couleur-primaire;
+      border-radius: 100px;
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      left: -1em;
+      bottom: 1.6em;
+    }
   }
 
   &__icon {
