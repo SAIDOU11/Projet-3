@@ -49,14 +49,13 @@ header {
       $couleur-secondaire 10%,
       $couleur-primaire
     );
-    box-shadow: 1px 3px 9px 5px #5c5757;
+    box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
     border-radius: 20px 20px;
 
     border: none;
     color: white;
     font-size: 18px;
     transition: all 200ms;
-
     &:hover {
       transform: scale(1.02);
     }
@@ -127,8 +126,11 @@ header {
 }
 
 .card {
-  border: 1px solid rgb(199, 14, 14);
+  background: rgb(255, 255, 255);
+  font-size: 13px;
+
   border-radius: 20px;
+  box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
   height: 250px;
   width: 80%;
   position: relative;
@@ -137,6 +139,9 @@ header {
     height: 70%;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
-    position: absolute;
+    position: relative;
+    &__description {
+      position: absolute;
+    }
   }
 }
