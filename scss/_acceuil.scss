@@ -186,4 +186,13 @@ main {
 }
 
 .fas {
+  color: transparent;
+  background-clip: text;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  background-image: linear-gradient($couleur-secondaire 10%, $couleur-primaire);
+}
+
+&:hover .fas {
+  opacity: 1;
 }

@@ -182,6 +182,17 @@ main {
   transform: translateY(-50%);
 }
 
+.fas {
+  color: transparent;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.fas:hover {
+  background-image: linear-gradient(#ff79da 10%, #9356dc);
+  opacity: 1;
+}
+
 html,
 body {
   height: 100%;
