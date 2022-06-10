@@ -184,15 +184,47 @@ main {
 
 .fas {
   color: transparent;
-  opacity: 0;
-  transition: all 1s ease-in-out;
+  background-image: #fff;
 }
-
 .fas:hover {
-  background-image: linear-gradient(#ff79da 10%, #9356dc);
-  opacity: 1;
+  transition: all 1s ease-in-out;
+  color: #cc56dc;
 }
 
+@media only screen and (min-width: 428px) {
+  .fonction__responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .fonction {
+    margin-bottom: 30px;
+  }
+
+  .fonction__responsive {
+    display: inline;
+    text-align: center;
+  }
+
+  .fonction__list {
+    display: inline;
+    width: 30%;
+    padding: 25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin: 20px;
+  }
+}
 html,
 body {
   height: 100%;

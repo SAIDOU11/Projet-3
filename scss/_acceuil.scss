@@ -187,12 +187,43 @@ main {
 
 .fas {
   color: transparent;
-  background-clip: text;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  background-image: linear-gradient($couleur-secondaire 10%, $couleur-primaire);
+  background-image: #fff;
+  &:hover {
+    transition: all 1s ease-in-out;
+    color: #cc56dc;
+  }
 }
 
-&:hover .fas {
-  opacity: 1;
+@media only screen and (min-width: 428px) {
+  .fonction__responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .fonction {
+    margin-bottom: 30px;
+  }
+  .fonction__responsive {
+    display: inline;
+    text-align: center;
+  }
+  .fonction__list {
+    display: inline;
+    width: 30%;
+    padding: 25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin: 20px;
+  }
 }
