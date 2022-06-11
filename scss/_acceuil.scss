@@ -46,6 +46,7 @@ main {
     font-weight: 300;
   }
   &__button {
+    cursor: pointer;
     margin: 10px;
     margin-bottom: 15px;
     padding: 13px;
@@ -189,7 +190,7 @@ main {
   color: transparent;
   background-image: #fff;
   &:hover {
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease-in-out;
     color: #cc56dc;
   }
 }

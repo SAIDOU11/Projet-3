@@ -1,3 +1,7 @@
+.colorsec {
+  color: red;
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -50,6 +54,7 @@ main {
   font-weight: 300;
 }
 .reservation__button {
+  cursor: pointer;
   margin: 10px;
   margin-bottom: 15px;
   padding: 13px;
@@ -187,7 +192,7 @@ main {
   background-image: #fff;
 }
 .fas:hover {
-  transition: all 1s ease-in-out;
+  transition: all 0.8s ease-in-out;
   color: #cc56dc;
 }
 
