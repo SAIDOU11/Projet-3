@@ -166,19 +166,20 @@ main {
   }
   &__content {
     flex: 1;
+    margin: 5px;
   }
   &__plat {
-    margin: 2px;
+    margin: 5px;
   }
-  &__plat- {
-    margin-bottom: 10px;
-  }
-  &__icon {
+  i {
     font-size: 25px;
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &__plat- {
+    margin-bottom: 10px;
   }
 }
 
