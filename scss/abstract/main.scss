@@ -1,29 +1,9 @@
-@use "resets";
-@use "variables";
-@use "acceuil";
-@use "mixin";
-@use "menu-1";
+@use "variables" as *;
+@use "mixins" as *;
+@use "resets" as *;
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.page-content {
-  min-height: 100%;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 0px;
-}
+@import "acceuil";
+@import "menu-1";
 
 header {
   @include flexCentre;

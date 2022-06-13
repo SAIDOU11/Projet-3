@@ -1,8 +1,4 @@
-@mixin flexCentre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@use "./index" as *;
 
 body {
   counter-reset: x;
@@ -210,6 +206,9 @@ main {
   .fonction__responsive {
     display: inline;
     text-align: center;
+  }
+  .fonction__title {
+    justify-content: center;
   }
   .fonction__list {
     display: inline;

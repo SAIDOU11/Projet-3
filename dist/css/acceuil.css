@@ -21,29 +21,6 @@ footer,
   height: 0px;
 }
 
-html,
-body {
-  height: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.page-content {
-  min-height: 100%;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 0px;
-}
-
 body {
   counter-reset: x;
 }
@@ -268,41 +245,4 @@ main {
     width: 45%;
     margin: 20px;
   }
-}
-.colorsec {
-  color: #9356dc;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-}
-
-.title {
-  font-family: "Shrikhand", cursive;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer {
-  padding-left: 20px;
-  padding-top: 20px;
-  width: 100%;
-  height: 130px;
-  background-color: rgb(65, 62, 62);
-  color: #fff;
-}
-
-.sec-footer {
-  margin-top: 10px;
-}
-.sec-footer__contact a {
-  color: #fff;
-  text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=acceuil.css.map */
