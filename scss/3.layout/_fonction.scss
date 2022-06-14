@@ -1,0 +1,54 @@
+@use "../2.utilities/mixins" as mix;
+@use "../2.utilities/variables" as var;
+
+.fonction {
+  font-weight: 700;
+  font-size: 18px;
+
+  &__title {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  &__ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list {
+    background-color: var.$bgc-couleur-secondaire;
+    width: 85%;
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
+    align-items: center;
+    margin: 32px;
+    position: relative;
+
+    &::before {
+      counter-increment: x;
+      content: counter(x);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 10px;
+      padding: 3px;
+      background-color: var.$couleur-primaire;
+      border-radius: 100px;
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      left: -1em;
+      bottom: 1.6em;
+    }
+  }
+
+  &__icon {
+    color: rgb(94, 89, 89);
+    padding: 20px;
+  }
+  &__iconviolet {
+    color: var.$couleur-primaire;
+  }
+}

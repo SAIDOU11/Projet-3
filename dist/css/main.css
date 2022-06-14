@@ -1,49 +1,14 @@
-html,
-body {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.page-content {
-  min-height: 100%;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 0px;
-}
-
-.menu__img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
 }
 
 html,
@@ -67,46 +32,14 @@ body {
 footer,
 .page-content::after {
   height: 0px;
-}
-
-.menu__img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
-}
-
-body {
-  counter-reset: x;
 }
 
 header {
-  box-shadow: 2px 1px 2px rgb(158, 157, 157);
-  position: relative;
-}
-
-main {
-  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
 }
 
 .location {
@@ -124,6 +57,16 @@ main {
 }
 .location__icon__city {
   font-size: 16px;
+}
+
+footer {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(65, 62, 62);
+  color: #fff;
 }
 
 .reservation {
@@ -205,17 +148,6 @@ main {
   color: #9356dc;
 }
 
-.container {
-  padding: 15px;
-  background-color: #f2f2f2;
-  font-size: 18px;
-}
-
-.restaurants__title {
-  margin-top: 30px;
-  margin-left: 6px;
-}
-
 .cards {
   display: flex;
   justify-content: center;
@@ -259,9 +191,10 @@ main {
 }
 .card__content {
   flex: 1;
+  margin: 5px;
 }
 .card__plat {
-  margin: 2px;
+  margin: 5px;
 }
 .card__plat- {
   margin-bottom: 10px;
@@ -283,131 +216,8 @@ main {
   color: #cc56dc;
 }
 
-@media only screen and (min-width: 428px) {
-  .fonction__responsive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .fonction {
-    margin-bottom: 30px;
-  }
-
-  .fonction__responsive {
-    display: inline;
-    text-align: center;
-  }
-
-  .fonction__title {
-    justify-content: center;
-  }
-
-  .fonction__list {
-    display: inline;
-    width: 30%;
-    padding: 25px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: 45%;
-    margin: 20px;
-  }
-}
-html,
-body {
-  height: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.page-content {
-  min-height: 100%;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 0px;
-}
-
-.menu__img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
-}
-
-.menu__title {
-  font-family: "Shrikhand", cursive;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-header {
-  height: 80px;
-  width: 100%;
-}
-
 .title {
   font-family: "Shrikhand", cursive;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  height: 130px;
-  background-color: rgb(65, 62, 62);
-  color: #fff;
 }
 
 .sec-footer {
@@ -416,13 +226,4 @@ footer {
 .sec-footer__contact a {
   color: #fff;
   text-decoration: none;
-}
-
-.fas {
-  color: transparent;
-  background-image: #fff;
-}
-.fas:hover {
-  transition: all 0.8s ease-in-out;
-  color: #cc56dc;
 }/*# sourceMappingURL=main.css.map */

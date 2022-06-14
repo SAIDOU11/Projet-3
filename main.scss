@@ -1,0 +1,37 @@
+// 1.resets
+
+@use "./scss/1.base/links";
+@use "./scss/1.base/resets";
+@use "./scss/1.base/typography";
+
+// 2. utilities
+
+@use "./scss/2.utilities/index" as *;
+@use "./scss/2.utilities/mixins" as mix;
+@use "./scss/2.utilities/variables" as var;
+
+// 3. layout
+
+@use "./scss/3.layout/header";
+@use "./scss/3.layout/location";
+@use "./scss/3.layout/footer";
+@use "./scss/3.layout/reservation";
+@use "./scss/3.layout/fonction";
+
+// 4. components
+
+@use "./scss/4.components/cards";
+
+.title {
+  font-family: "Shrikhand", cursive;
+}
+
+.sec-footer {
+  margin-top: 10px;
+  &__contact {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
