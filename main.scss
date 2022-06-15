@@ -17,21 +17,8 @@
 @use "./scss/3.layout/footer";
 @use "./scss/3.layout/reservation";
 @use "./scss/3.layout/fonction";
+@use "./scss/3.layout/cards";
 
 // 4. components
 
-@use "./scss/4.components/cards";
-
-.title {
-  font-family: "Shrikhand", cursive;
-}
-
-.sec-footer {
-  margin-top: 10px;
-  &__contact {
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-}
+// 5. pages

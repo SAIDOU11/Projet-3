@@ -13,6 +13,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  counter-reset: x;
+}
+
 .page-content {
   min-height: 100%;
 }
@@ -24,5 +28,5 @@ body {
 
 footer,
 .page-content::after {
-  height: 0px;
+  height: -30px;
 }

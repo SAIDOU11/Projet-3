@@ -1,9 +1,24 @@
+.title {
+  font-family: "Shrikhand", cursive;
+}
+
 footer {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  height: 130px;
+  height: 150px;
   background-color: rgb(65, 62, 62);
   color: #fff;
+}
+
+.sec-footer {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  &__contact {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }

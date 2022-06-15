@@ -1,5 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   counter-reset: x;
+}
+
+.page-content {
+  min-height: 100%;
+}
+
+.page-content::after {
+  content: "";
+  display: block;
+}
+
+footer,
+.page-content::after {
+  height: -30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
 }
 
 header {
@@ -7,8 +51,148 @@ header {
   position: relative;
 }
 
-main {
-  padding: 0px;
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 50px;
+  gap: 1.5rem;
+  color: rgb(54, 52, 52);
+  font-weight: 700;
+}
+.location__icon {
+  font-size: 1.2rem;
+}
+.location__icon__city {
+  font-size: 16px;
+}
+
+.title {
+  font-family: "Shrikhand", cursive;
+}
+
+footer {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(65, 62, 62);
+  color: #fff;
+}
+
+.sec-footer {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.sec-footer__contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.reservation {
+  padding: 15px;
+  text-align: center;
+  background-color: #fafafa;
+}
+.reservation__title {
+  margin: 10px;
+}
+.reservation__paragraph {
+  color: #5c5757;
+  font-size: 15px;
+  margin: 10px;
+  font-weight: 300;
+}
+.reservation__button {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 13px;
+  background-image: linear-gradient(#ff79da 10%, #9356dc);
+  box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
+  border-radius: 20px 20px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: all 200ms;
+}
+.reservation__button:hover {
+  transform: scale(1.02);
+}
+
+.fonction {
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (min-width: 900px) {
+  .fonction {
+    margin-bottom: 30px;
+  }
+}
+.fonction__title {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+@media (min-width: 900px) {
+  .fonction__title {
+    justify-content: center;
+  }
+}
+.fonction__ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fonction__list {
+  background-color: #fafafa;
+  width: 85%;
+  border-radius: 1.25rem;
+  border: none;
+  box-shadow: 1px 1px 2px 1px rgba(199, 195, 195, 0.5);
+  align-items: center;
+  margin: 32px;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .fonction__list {
+    display: inline;
+    width: 30%;
+    padding: 25px;
+  }
+}
+.fonction__list::before {
+  counter-increment: x;
+  content: counter(x);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  padding: 3px;
+  background-color: #9356dc;
+  border-radius: 100px;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: -1em;
+  bottom: 1.6em;
+}
+.fonction__icon {
+  color: rgb(94, 89, 89);
+  padding: 20px;
+}
+.fonction__iconviolet {
+  color: #9356dc;
+}
+
+@media (min-width: 428px) {
+  .fonction__responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .container {
@@ -22,30 +206,79 @@ main {
   margin-left: 6px;
 }
 
-@media only screen and (min-width: 428px) {
-  .fonction__responsive {
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
-@media only screen and (min-width: 900px) {
-  .fonction {
-    margin-bottom: 30px;
-  }
 
-  .fonction__responsive {
-    display: inline;
-    text-align: center;
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
+  height: 260px;
+  width: 90%;
+  color: inherit;
+  margin-bottom: 30px;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .card {
+    height: 300px;
+    width: 45%;
+    margin: 15px;
   }
-
-  .fonction__title {
-    justify-content: center;
-  }
-
-  .fonction__list {
-    display: inline;
-    width: 30%;
-    padding: 25px;
-  }
+}
+.card__image1 {
+  height: 70%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__new {
+  background-color: #99e2d0;
+  border-radius: 3px;
+  color: rgb(51, 92, 51);
+  padding: 4px 8px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.card__title {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.card__content {
+  flex: 1;
+  align-items: center;
+}
+.card__plat {
+  margin: 0px;
+}
+.card__plat- {
+  margin-bottom: 10px;
+}
+.card__plat-::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  transition: all 0.5s ease-in-out;
+}
+.card__plat-::after:hover {
+  color: rgb(200, 85, 204);
 }/*# sourceMappingURL=acceuil.css.map */
