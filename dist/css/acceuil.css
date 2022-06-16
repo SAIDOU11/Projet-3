@@ -262,23 +262,35 @@ footer {
 }
 .card__content {
   flex: 1;
+  line-height: 5px;
   align-items: center;
-}
-.card__plat {
-  margin: 0px;
-}
-.card__plat- {
+  margin-top: -10px;
   margin-bottom: 10px;
 }
-.card__plat-::after {
+.card__content:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  opacity: 1;
+  color: inherit;
+  float: right;
+  font-weight: 400;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(700%);
+  font-size: 25px;
+}
+.card__content:after {
   font-family: "Font Awesome 5 Free";
   content: "\f004";
   float: right;
+  font-weight: 400;
+  background-color: #fff;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 28px;
-  transition: all 0.5s ease-in-out;
+  transform: translateY(-200%);
+  font-size: 25px;
 }
-.card__plat-::after:hover {
-  color: rgb(200, 85, 204);
+.card__content:hover::after {
+  opacity: 1;
+  font-weight: 900;
+  background-image: linear-gradient(to top, rgb(197, 69, 191) rgb(129, 17, 124));
 }/*# sourceMappingURL=acceuil.css.map */

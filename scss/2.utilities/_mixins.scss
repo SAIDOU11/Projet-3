@@ -8,19 +8,34 @@
   box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
 }
 
-@mixin heart {
+@mixin linearGradient {
+  background-image: linear-gradient(
+    to top,
+    rgb(197, 69, 191) rgb(129, 17, 124)
+  );
+}
+
+@mixin heartbefore {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  opacity: 1;
+  color: inherit;
+  float: right;
+  font-weight: 400;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(700%);
+  font-size: 25px;
+}
+
+@mixin heartafter {
   font-family: "Font Awesome 5 Free";
   content: "\f004";
   float: right;
+  font-weight: 400;
+  color: mix.$couleur-secondaire;
+  background-color: #fff;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 28px;
-}
-
-@mixin gradient {
-  background-image: linear-gradient(
-    to top,
-    rgb(238, 115, 207),
-    rgb(146, 13, 124)
-  );
+  transform: translateY(-200%);
+  font-size: 25px;
 }

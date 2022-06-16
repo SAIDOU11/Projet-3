@@ -61,20 +61,20 @@
   }
   &__content {
     flex: 1;
+    line-height: 5px;
     align-items: center;
-  }
-  &__plat {
-    margin: 0px;
-  }
-  &__plat- {
+    margin-top: -10px;
     margin-bottom: 10px;
 
-    &::after {
-      @include mix.heart;
-      transition: all 0.5s ease-in-out;
-      &:hover {
-        color: rgb(200, 85, 204);
-      }
+    &:before {
+      @include mix.heartbefore;
+    }
+    &:after {
+      @include mix.heartafter;
+    }
+    &:hover::after {
+      opacity: 1;
+      color: mix.$couleur-secondaire;
     }
   }
 }
