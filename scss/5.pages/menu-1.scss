@@ -17,14 +17,11 @@
 @use "../3.layout/footer";
 @use "../3.layout/reservation";
 @use "../3.layout/fonction";
+@use "../3.layout/cards-menu";
+@use "../3.layout/menu-list";
 
 // 4. components
 
-.menu__title {
-  font-family: "Shrikhand", cursive;
-  width: 100%;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// 5. pages
+
+@use "../../main.scss";

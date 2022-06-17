@@ -66,15 +66,21 @@
     margin-top: -10px;
     margin-bottom: 10px;
 
-    &:before {
-      @include mix.heartbefore;
+    &::before {
+      @include mix.heart;
     }
-    &:after {
-      @include mix.heartafter;
+
+    &::after {
+      @include mix.heart;
+      @include mix.gradient;
+      opacity: 0;
+      color: transparent;
+      font-weight: 900;
     }
+
     &:hover::after {
       opacity: 1;
-      color: mix.$couleur-secondaire;
+      color: rgb(209, 57, 201);
     }
   }
 }

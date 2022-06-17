@@ -5,12 +5,6 @@ a {
   color: inherit;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
 html,
 body {
   height: 100%;
@@ -44,11 +38,19 @@ header {
   align-items: center;
   height: 80px;
   width: 100%;
+  box-shadow: 2px 1px 2px rgb(158, 157, 157);
 }
 
-header {
-  box-shadow: 2px 1px 2px rgb(158, 157, 157);
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+}
+.header__logo {
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .location {
@@ -177,7 +179,7 @@ footer {
   width: 15px;
   position: absolute;
   left: -1em;
-  bottom: 1.6em;
+  bottom: 2.6em;
 }
 .fonction__icon {
   color: rgb(94, 89, 89);
@@ -267,30 +269,102 @@ footer {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-.card__content:before {
+.card__content::before {
+  display: inline-block;
   font-family: "Font Awesome 5 Free";
   content: "\f004";
   opacity: 1;
   color: inherit;
-  float: right;
+  position: absolute;
+  right: 1rem;
   font-weight: 400;
-  opacity: 0;
+  -webkit-background-clip: text;
+          background-clip: text;
   top: 50%;
-  transform: translateY(700%);
+  transform: translateY(-50%);
   font-size: 25px;
+  transition: all 0.4s ease-in-out;
 }
-.card__content:after {
+.card__content::after {
+  display: inline-block;
   font-family: "Font Awesome 5 Free";
   content: "\f004";
-  float: right;
+  opacity: 1;
+  color: inherit;
+  position: absolute;
+  right: 1rem;
   font-weight: 400;
-  background-color: #fff;
+  -webkit-background-clip: text;
+          background-clip: text;
   top: 50%;
-  transform: translateY(-200%);
+  transform: translateY(-50%);
   font-size: 25px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to top, rgb(197, 69, 191) rgb(129, 17, 124));
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
 }
 .card__content:hover::after {
   opacity: 1;
-  font-weight: 900;
+  color: rgb(209, 57, 201);
+}
+
+.menu__img {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-list {
+  border-radius: 20px 20px 0 0;
+  margin: 40px 15px 15px 15px;
+}
+.menu-list h2 {
+  font-family: "Shrikhand", cursive;
+  margin-top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-list h2::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  opacity: 1;
+  color: inherit;
+  position: absolute;
+  right: 1rem;
+  font-weight: 400;
+  -webkit-background-clip: text;
+          background-clip: text;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  transition: all 0.4s ease-in-out;
+}
+.menu-list h2::after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  opacity: 1;
+  color: inherit;
+  position: absolute;
+  right: 1rem;
+  font-weight: 400;
+  -webkit-background-clip: text;
+          background-clip: text;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  transition: all 0.4s ease-in-out;
   background-image: linear-gradient(to top, rgb(197, 69, 191) rgb(129, 17, 124));
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+.menu-list h2:hover::after {
+  opacity: 1;
+  color: rgb(209, 57, 201);
 }/*# sourceMappingURL=main.css.map */
