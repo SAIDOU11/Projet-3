@@ -1,6 +1,5 @@
 // 1.resets
 
-@use "../1.base/links";
 @use "../1.base/resets";
 @use "../1.base/typography";
 
@@ -12,7 +11,10 @@
 
 // 3. layout
 
-@use "../3.layout/header";
+@use "../3.layout/main-content";
+@use "../3.layout/allmenus-menu";
+@use "../3.layout/header-home";
+@use "../3.layout/header-menus";
 @use "../3.layout/location";
 @use "../3.layout/footer";
 @use "../3.layout/reservation";

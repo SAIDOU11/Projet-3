@@ -1,13 +1,14 @@
 @use "../2.utilities/mixins" as mix;
 
 .menu-list {
-  border-radius: 20px 20px 0 0;
-  margin: 40px 15px 15px 15px;
-  h2 {
-    font-family: "Shrikhand", cursive;
-    @include mix.transition-heart;
-    margin-top: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  position: relative;
+  margin-top: -25px;
+  border-radius: 30px 30px 0 0;
+  z-index: 1;
+}
+
+h2 {
+  padding: 30px 10px 30px 0px;
+  font-family: "Shrikhand", cursive;
+  @include mix.transition-heart;
 }

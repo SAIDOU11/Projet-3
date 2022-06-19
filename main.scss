@@ -1,6 +1,5 @@
 // 1.resets
 
-@use "./scss/1.base/links";
 @use "./scss/1.base/resets";
 @use "./scss/1.base/typography";
 
@@ -12,7 +11,10 @@
 
 // 3. layout
 
-@use "./scss/3.layout/header";
+@use "./scss/3.layout/main-content";
+@use "./scss/3.layout/allmenus-menu";
+@use "./scss/3.layout/header-home";
+@use "./scss/3.layout/header-menus";
 @use "./scss/3.layout/location";
 @use "./scss/3.layout/footer";
 @use "./scss/3.layout/reservation";
