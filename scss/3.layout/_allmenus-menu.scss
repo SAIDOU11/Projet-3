@@ -1,4 +1,5 @@
 @use "../2.utilities/mixins" as mix;
+@use "../2.utilities/variables" as var;
 
 .allmenus-menu {
   display: grid;
@@ -15,7 +16,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-color: aqua;
+    background-color: var.$couleur-tertiare;
     width: 45px;
     height: 3px;
     bottom: 0;
@@ -24,16 +25,53 @@
 }
 
 .block-item {
+  overflow: hidden;
+  display: flex;
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
   @include mix.shadow;
   margin-top: 20px;
-  padding: 15px;
   width: 95%;
   height: 70px;
-  margin-bottom: 25px;
+
+  &__meal {
+    padding: 15px 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
   &__title {
     padding: 2px;
+  }
+
+  &__price {
+    margin-left: auto;
+    padding: 10px;
+    font-weight: 900;
+    transform: translateY(33%);
+    white-space: nowrap;
+  }
+  &__animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var.$couleur-tertiare;
+    color: #fff;
+    font-size: 20px;
+    margin-right: -20%;
+    width: 20%;
+    height: 100%;
+    transition-duration: 0.5s;
+  }
+  &:hover {
+    .block-item__animation {
+      margin: 0;
+      @include mix.transformation;
+    }
+    i {
+      animation: transformation 0.5s ease-in-out;
+    }
   }
 }

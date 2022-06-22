@@ -1,3 +1,5 @@
+@use "../2.utilities/variables" as var;
+
 @mixin flexCentre {
   display: flex;
   justify-content: center;
@@ -13,6 +15,26 @@
     to top,
     rgb(197, 69, 191) rgb(129, 17, 124)
   );
+}
+
+@mixin button {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 13px 25px;
+  background-image: linear-gradient(
+    var.$couleur-secondaire 10%,
+    var.$couleur-primaire
+  );
+  box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
+  border-radius: 100px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: all 200ms;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 @mixin heart {
@@ -47,5 +69,16 @@
   &:hover::after {
     opacity: 1;
     color: rgb(209, 57, 201);
+  }
+}
+
+@mixin transformation {
+  @keyframes transformation {
+    0% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
 }

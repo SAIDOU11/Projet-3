@@ -47,6 +47,28 @@ footer,
   padding-bottom: 30px;
 }
 
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commander__button {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 13px 25px;
+  background-image: linear-gradient(#ff79da 10%, #9356dc);
+  box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
+  border-radius: 100px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: all 200ms;
+}
+.commander__button:hover {
+  transform: scale(1.02);
+}
+
 .allmenus-menu {
   display: grid;
 }
@@ -65,7 +87,7 @@ footer,
 .menus-menu__title::after {
   position: absolute;
   content: "";
-  background-color: aqua;
+  background-color: #99e2d0;
   width: 45px;
   height: 3px;
   bottom: 0;
@@ -73,18 +95,66 @@ footer,
 }
 
 .block-item {
+  overflow: hidden;
+  display: flex;
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
   margin-top: 20px;
-  padding: 15px;
   width: 95%;
   height: 70px;
-  margin-bottom: 25px;
+}
+.block-item__meal {
+  padding: 15px 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block-item__title {
   padding: 2px;
+}
+.block-item__price {
+  margin-left: auto;
+  padding: 10px;
+  font-weight: 900;
+  transform: translateY(33%);
+  white-space: nowrap;
+}
+.block-item__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #fff;
+  font-size: 20px;
+  margin-right: -20%;
+  width: 20%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+.block-item:hover .block-item__animation {
+  margin: 0;
+}
+@-webkit-keyframes transformation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes transformation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.block-item:hover i {
+  -webkit-animation: transformation 0.5s ease-in-out;
+          animation: transformation 0.5s ease-in-out;
 }
 
 .header {
@@ -157,11 +227,13 @@ footer {
 }
 
 .reservation {
+  font-size: 18px;
   padding: 15px;
   text-align: center;
   background-color: #fafafa;
 }
 .reservation__title {
+  font-family: "Roboto", sans-serif;
   margin: 10px;
 }
 .reservation__paragraph {
@@ -174,10 +246,10 @@ footer {
   cursor: pointer;
   margin: 10px;
   margin-bottom: 15px;
-  padding: 13px;
+  padding: 13px 25px;
   background-image: linear-gradient(#ff79da 10%, #9356dc);
   box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
-  border-radius: 20px 20px;
+  border-radius: 100px;
   border: none;
   color: white;
   font-size: 18px;
