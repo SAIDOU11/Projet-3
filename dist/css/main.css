@@ -42,7 +42,7 @@ footer,
 }
 
 .main-content {
-  padding: 30px 15px 30px 15px;
+  padding: 20px 15px;
 }
 
 .commander {
@@ -64,7 +64,7 @@ footer,
   transition: all 200ms;
 }
 .commander__button:hover {
-  transform: scale(1.02);
+  transform: scale(1.2);
 }
 
 .allmenus-menu {
@@ -100,8 +100,8 @@ footer,
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
-  margin: 1rem 0;
-  max-width: 100%;
+  margin: 20px 0px;
+  width: 80%;
   height: 70px;
 }
 .block-item__meal {
@@ -121,7 +121,7 @@ footer,
 }
 .block-item__price {
   margin-left: auto;
-  padding: 10px;
+  padding: 15px;
   font-weight: 900;
   transform: translateY(33%);
   white-space: nowrap;
@@ -261,7 +261,7 @@ footer {
   transition: all 200ms;
 }
 .reservation__button:hover {
-  transform: scale(1.02);
+  transform: scale(1.2);
 }
 
 .fonction {
@@ -344,8 +344,10 @@ footer {
 }
 
 .restaurants__title {
+  font-size: 22px;
   margin-top: 30px;
   margin-left: 6px;
+  padding-left: 20px;
 }
 
 .cards {
