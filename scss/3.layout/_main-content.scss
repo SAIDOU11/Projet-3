@@ -2,7 +2,10 @@
 @use "../2.utilities/variables" as var;
 
 .main-content {
-  padding: 20px 15px;
+  padding: 20px 20px;
+  @media (min-width: 900px) {
+    padding: 20px 0px 20px 20px;
+  }
 }
 
 .commander {

@@ -36,6 +36,30 @@
   width: 80%;
   height: 70px;
 
+  @keyframes itemanimation {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @for $i from 0 through 9 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+
+  animation: itemanimation 2s;
+  animation-fill-mode: both;
+
+  @media (min-width: 900px) {
+    width: 90%;
+  }
+
   &__meal {
     padding: 15px 15px;
     @include mix.overflow;
@@ -54,7 +78,7 @@
     margin-left: auto;
     padding: 15px;
     font-weight: 900;
-    transform: translateY(33%);
+    transform: translateY(25%);
     white-space: nowrap;
   }
   &__animation {
