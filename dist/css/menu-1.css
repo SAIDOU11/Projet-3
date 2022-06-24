@@ -41,92 +41,6 @@ footer,
   height: -30px;
 }
 
-.loader {
-  position: fixed;
-  z-index: 1;
-  background-color: #ddd;
-  display: grid;
-  place-items: center;
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  -webkit-animation: loader 0.8s 2.5s;
-          animation: loader 0.8s 2.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes loader {
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes loader {
-  to {
-    transform: scale(0);
-  }
-}
-
-.main-content {
-  padding: 20px 20px;
-}
-@media (min-width: 900px) {
-  .main-content {
-    padding: 20px 0px 20px 20px;
-  }
-}
-
-.commander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.commander__button {
-  cursor: pointer;
-  margin: 10px;
-  margin-bottom: 15px;
-  padding: 13px 25px;
-  background-image: linear-gradient(#ff79da 10%, #9356dc);
-  box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
-  border-radius: 100px;
-  border: none;
-  color: white;
-  font-size: 18px;
-  transition: all 200ms;
-}
-.commander__button:hover {
-  opacity: 0.7;
-  box-shadow: 2px 2px 4px 2px rgb(100, 96, 96);
-  transform: scale(1.1);
-}
-
-.allmenus-menu {
-  display: grid;
-}
-@media (min-width: 900px) {
-  .allmenus-menu {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.menus-menu__title {
-  text-transform: uppercase;
-  position: relative;
-  font-weight: 400;
-  padding-bottom: 5px;
-  margin-top: 10px;
-}
-.menus-menu__title::after {
-  position: absolute;
-  content: "";
-  background-color: #99e2d0;
-  width: 45px;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-}
-
 .block-item {
   overflow: hidden;
   display: flex;
@@ -135,7 +49,7 @@ footer,
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
   margin: 20px 0px;
-  width: 80%;
+  width: 100%;
   height: 70px;
   -webkit-animation: itemanimation 2s;
           animation: itemanimation 2s;
@@ -265,6 +179,93 @@ footer,
   font-size: 25px;
 }
 
+.loader {
+  position: fixed;
+  z-index: 1;
+  background-color: #ddd;
+  color: #9356dc;
+  display: grid;
+  place-items: center;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: loader 0.8s 2.5s;
+          animation: loader 0.8s 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes loader {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes loader {
+  to {
+    transform: scale(0);
+  }
+}
+
+.main-content {
+  padding: 0px 10px;
+}
+@media (min-width: 900px) {
+  .main-content {
+    padding: 20px 0px 20px 20px;
+  }
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commander__button {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 13px 25px;
+  background-image: linear-gradient(#ff79da 10%, #9356dc);
+  box-shadow: 1px 1px 2px 1px rgb(163, 162, 162);
+  border-radius: 100px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: all 200ms;
+}
+.commander__button:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 4px 2px rgb(100, 96, 96);
+  transform: scale(1.1);
+}
+
+.allmenus-menu {
+  display: grid;
+}
+@media (min-width: 900px) {
+  .allmenus-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.menus-menu__title {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+.menus-menu__title::after {
+  position: absolute;
+  content: "";
+  background-color: #99e2d0;
+  width: 45px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -372,20 +373,15 @@ footer {
 .fonction {
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 @media (min-width: 900px) {
   .fonction {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 .fonction__title {
-  margin-left: 20px;
-  margin-top: 40px;
-}
-@media (min-width: 900px) {
-  .fonction__title {
-    justify-content: center;
-  }
+  margin: 40px 0 30px 30px;
 }
 .fonction__ol {
   margin: 0;
@@ -443,9 +439,8 @@ footer {
 }
 
 .menu__img {
-  max-width: 100%;
   width: 100%;
-  height: 300px;
+  max-height: 32em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -501,119 +496,6 @@ footer {
   font-weight: 900;
 }
 .menu-list__title:hover::after {
-  opacity: 1;
-  color: rgb(209, 57, 201);
-}
-
-.container {
-  padding: 15px;
-  background-color: #f2f2f2;
-  font-size: 18px;
-}
-
-.restaurants__title {
-  font-size: 22px;
-  margin-top: 30px;
-  margin-left: 6px;
-  padding-left: 20px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-@media (min-width: 900px) {
-  .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
-  height: 260px;
-  width: 90%;
-  color: inherit;
-  margin-bottom: 30px;
-  position: relative;
-}
-@media (min-width: 900px) {
-  .card {
-    height: 300px;
-    width: 45%;
-    margin: 15px;
-  }
-}
-.card__image1 {
-  height: 70%;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card__new {
-  background-color: #99e2d0;
-  border-radius: 3px;
-  color: rgb(51, 92, 51);
-  padding: 4px 8px;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
-.card__title {
-  position: relative;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-}
-.card__content {
-  flex: 1;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.card__content::before {
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  opacity: 1;
-  color: inherit;
-  position: absolute;
-  right: 1rem;
-  font-weight: 400;
-  -webkit-background-clip: text;
-          background-clip: text;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  transition: all 0.4s ease-in-out;
-}
-.card__content::after {
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  opacity: 1;
-  color: inherit;
-  position: absolute;
-  right: 1rem;
-  font-weight: 400;
-  -webkit-background-clip: text;
-          background-clip: text;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(to top, rgb(197, 69, 191) rgb(129, 17, 124));
-  opacity: 0;
-  color: transparent;
-  font-weight: 900;
-}
-.card__content:hover::after {
   opacity: 1;
   color: rgb(209, 57, 201);
 }/*# sourceMappingURL=menu-1.css.map */

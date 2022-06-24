@@ -4,16 +4,13 @@
 .fonction {
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 30px;
   @media (min-width: 900px) {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   &__title {
-    margin-left: 20px;
-    margin-top: 40px;
-    @media (min-width: 900px) {
-      justify-content: center;
-    }
+    margin: 40px 0 30px 30px;
   }
 
   &__ol {

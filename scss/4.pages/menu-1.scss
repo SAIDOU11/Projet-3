@@ -11,6 +11,7 @@
 
 // 3. layout
 
+@use "../3.layout/block-item";
 @use "../3.layout/loader";
 @use "../3.layout/main-content";
 @use "../3.layout/allmenus-menu";
@@ -22,9 +23,3 @@
 @use "../3.layout/fonction";
 @use "../3.layout/cards-menu";
 @use "../3.layout/menu-list";
-
-// 4. components
-
-// 5. pages
-
-@use "../../main.scss";
