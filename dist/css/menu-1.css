@@ -401,7 +401,6 @@ footer {
 @media (min-width: 900px) {
   .fonction__list {
     display: inline;
-    width: 30%;
     padding: 25px;
   }
 }

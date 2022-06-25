@@ -57,12 +57,17 @@
     position: relative;
     padding: 1rem;
     display: flex;
+
     align-items: center;
+    @media (min-width: 900px) {
+      padding: 1rem;
+      margin: 0;
+    }
   }
   &__content {
     flex: 1;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
     &::before {
       @include mix.heart;
