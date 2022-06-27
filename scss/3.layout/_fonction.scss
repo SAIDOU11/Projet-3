@@ -11,6 +11,11 @@
 
   &__title {
     margin: 40px 0 30px 30px;
+    @media (min-width: 900px) {
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 30px;
+    }
   }
 
   &__ol {
@@ -28,7 +33,7 @@
     align-items: center;
     margin: 32px;
     position: relative;
-    @media (min-width: 900px) {
+    @media (min-width: 1250px) {
       display: inline;
       padding: 25px;
     }
@@ -56,6 +61,7 @@
     color: rgb(94, 89, 89);
     padding: 20px;
   }
+
   &__iconviolet {
     color: var.$couleur-primaire;
   }

@@ -9,6 +9,10 @@
   &__title {
     font-family: "Roboto", sans-serif;
     margin: 10px;
+    @media (min-width: 900px) {
+      text-align: center;
+      font-size: 30px;
+    }
   }
   &__paragraph {
     color: #5c5757;
