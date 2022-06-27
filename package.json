@@ -1,5 +1,26 @@
 {
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Mon projet 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "./scss/main.scss:./dist/css/main.css -w",
+    "build": "postcss ./dist/css/main.css -u autoprefixer -o ./build/main-min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAIDOU11/Projet-3.git"
+  },
+  "author": "SALIF Dieye Saidou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAIDOU11/Projet-3/issues"
+  },
+  "homepage": "https://github.com/SAIDOU11/Projet-3#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.53.0"
   }
 }
