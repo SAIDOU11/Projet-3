@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "./scss/main.scss:./dist/css/main.css -w",
-    "build": "postcss ./dist/css/main.css -u autoprefixer -o ./build/main-min.css"
+    "build": "postcss ./dist/css/main.css -u autoprefixer cssnano -o ./build/main-min.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/SAIDOU11/Projet-3#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
     "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
     "sass": "^1.53.0"
