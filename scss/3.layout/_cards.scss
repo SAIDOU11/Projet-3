@@ -61,7 +61,6 @@
     position: relative;
     padding: 1rem;
     display: flex;
-
     align-items: center;
     @media (min-width: 900px) {
       padding: 1rem;
@@ -75,6 +74,7 @@
 
     &::before {
       @include mix.heart;
+      @include mix.gradient;
     }
 
     &::after {
@@ -82,12 +82,12 @@
       @include mix.gradient;
       opacity: 0;
       color: transparent;
-      font-weight: 900;
+      font-weight: 400;
     }
-
     &:hover::after {
       opacity: 1;
-      color: rgb(209, 57, 201);
+      font-weight: 900;
+      color: transparent;
     }
   }
 }

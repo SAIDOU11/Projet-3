@@ -324,7 +324,7 @@ footer {
   padding-bottom: 20px;
   width: 100%;
   height: 150px;
-  background-color: rgb(65, 62, 62);
+  background-color: rgb(68, 63, 63);
   color: #fff;
 }
 
@@ -536,41 +536,75 @@ footer {
 }
 .card__content::before {
   display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
+  font-weight: 400;
   content: "\f004";
-  opacity: 1;
-  color: inherit;
+  font-size: 25px;
   position: absolute;
   right: 1rem;
-  font-weight: 400;
-  -webkit-background-clip: text;
-          background-clip: text;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 25px;
-  transition: all 0.4s ease-in-out;
+  color: inherit;
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 .card__content::after {
   display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
+  font-weight: 400;
   content: "\f004";
-  opacity: 1;
-  color: inherit;
+  font-size: 25px;
   position: absolute;
   right: 1rem;
-  font-weight: 400;
-  -webkit-background-clip: text;
-          background-clip: text;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 25px;
-  transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(to top, rgb(197, 69, 191) rgb(129, 17, 124));
+  color: inherit;
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
   opacity: 0;
   color: transparent;
-  font-weight: 900;
+  font-weight: 400;
 }
 .card__content:hover::after {
   opacity: 1;
-  color: rgb(209, 57, 201);
+  font-weight: 900;
+  color: transparent;
+}
+
+.menu__img {
+  width: 100%;
+  max-height: 32em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu-list {
+  position: relative;
+  margin-top: -25px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px 30px 0 0;
+  background-color: rgb(241, 236, 236);
+  border-radius: 30px 30px 0 0;
+  z-index: 1;
+}
+.menu-list__title {
+  padding: 30px 15px 30px 15px;
+  font-family: "Shrikhand", cursive;
 }/*# sourceMappingURL=acceuil.css.map */
