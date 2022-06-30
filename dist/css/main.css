@@ -550,7 +550,7 @@ footer {
   content: "\f004";
   font-size: 25px;
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -559,11 +559,6 @@ footer {
   opacity: 1;
   transition: all 400ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
-}
-@media (min-width: 1025px) {
-  .card__content::before {
-    right: 4rem;
-  }
 }
 .card__content::after {
   display: inline-block;
@@ -576,7 +571,7 @@ footer {
   content: "\f004";
   font-size: 25px;
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -588,11 +583,6 @@ footer {
   opacity: 0;
   color: transparent;
   font-weight: 400;
-}
-@media (min-width: 1025px) {
-  .card__content::after {
-    right: 4rem;
-  }
 }
 .card__content:hover::after {
   opacity: 1;
@@ -635,7 +625,7 @@ footer {
   content: "\f004";
   font-size: 25px;
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -643,11 +633,6 @@ footer {
           background-clip: text;
   opacity: 1;
   transition: all 400ms ease-in-out;
-}
-@media (min-width: 1025px) {
-  .menu-list__title::before {
-    right: 4rem;
-  }
 }
 .menu-list__title::after {
   display: inline-block;
@@ -660,7 +645,7 @@ footer {
   content: "\f004";
   font-size: 25px;
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -670,11 +655,6 @@ footer {
   transition: all 400ms ease-in-out;
   color: transparent;
   font-weight: 400;
-}
-@media (min-width: 1025px) {
-  .menu-list__title::after {
-    right: 4rem;
-  }
 }
 .menu-list__title:hover::after {
   opacity: 1;
