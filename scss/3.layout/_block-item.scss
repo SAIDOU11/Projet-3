@@ -8,14 +8,15 @@
   position: relative;
   overflow: hidden;
   height: 70px;
-  width: 85%;
+  width: 100%;
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
   @include mix.shadow;
   margin: 20px 0;
   @media (min-width: 1025px) {
-    margin: 20px;
+    margin: 20px 20px;
+    width: 90%;
   }
   @keyframes itemanimation {
     0% {

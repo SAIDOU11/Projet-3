@@ -3,7 +3,8 @@
 
 .allmenus-menu {
   display: grid;
-  margin: 1rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
   grid-template-columns: 1fr;
   min-width: 100%;
   @media (min-width: 1025px) {

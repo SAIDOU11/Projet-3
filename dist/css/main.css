@@ -51,7 +51,7 @@ footer,
   position: relative;
   overflow: hidden;
   height: 70px;
-  width: 85%;
+  width: 100%;
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
@@ -64,7 +64,8 @@ footer,
 }
 @media (min-width: 1025px) {
   .block-item {
-    margin: 20px;
+    margin: 20px 20px;
+    width: 90%;
   }
 }
 @-webkit-keyframes itemanimation {
@@ -215,7 +216,7 @@ footer,
 }
 
 .main-content {
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   background-color: rgb(241, 236, 236);
   min-width: 100%;
 }
@@ -246,7 +247,8 @@ footer,
 
 .allmenus-menu {
   display: grid;
-  margin: 1rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
   grid-template-columns: 1fr;
   min-width: 100%;
 }
