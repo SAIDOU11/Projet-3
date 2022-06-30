@@ -552,7 +552,7 @@ footer {
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 1;
-  transition: all 700ms ease-in-out;
+  transition: all 400ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 .card__content::after {
@@ -573,7 +573,7 @@ footer {
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 1;
-  transition: all 700ms ease-in-out;
+  transition: all 400ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   opacity: 0;
   color: transparent;
@@ -626,7 +626,7 @@ footer {
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 1;
-  transition: all 700ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .menu-list__title::after {
   display: inline-block;
@@ -646,7 +646,7 @@ footer {
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 1;
-  transition: all 700ms ease-in-out;
+  transition: all 400ms ease-in-out;
   color: transparent;
   font-weight: 400;
 }
