@@ -3,7 +3,10 @@
 
 .allmenus-menu {
   display: grid;
-  @media (min-width: 900px) {
+  margin: 1rem;
+  grid-template-columns: 1fr;
+  min-width: 100%;
+  @media (min-width: 1025px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

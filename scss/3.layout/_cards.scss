@@ -41,7 +41,6 @@
     width: 45%;
     margin: 15px;
   }
-
   &__image1 {
     height: 70%;
     width: 100%;
@@ -71,12 +70,10 @@
     flex: 1;
     margin-top: 0px;
     margin-bottom: 0px;
-
     &::before {
       @include mix.heart;
       @include mix.gradient;
     }
-
     &::after {
       @include mix.heart;
       @include mix.gradient;
