@@ -60,24 +60,23 @@
   transition: all 700ms ease-in-out;
 }
 
-//@mixin transition-heart {
-// &::before {
-//   @include heart;
-// }
+@mixin transition-heart {
+  &::before {
+    @include heart;
+  }
 
-// &::after {
-//   @include heart;
-//   @include gradient(1);
-//  opacity: 0;
-//  color: transparent;
-//   font-weight: 400;
-// }
+  &::after {
+    @include heart;
+    color: transparent;
+    font-weight: 400;
+  }
 
-// &:hover::after {
-//   opacity: 1;
-//   color: rgb(209, 57, 201);
-// }
-//}
+  &:hover::after {
+    opacity: 1;
+    @include gradient;
+    font-weight: 900;
+  }
+}
 
 @mixin transformation {
   @keyframes transformation {

@@ -475,6 +475,53 @@ footer {
   padding: 30px 15px 30px 15px;
   font-family: "Shrikhand", cursive;
 }
+.menu-list__title::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+}
+.menu-list__title::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+  color: transparent;
+  font-weight: 400;
+}
+.menu-list__title:hover::after {
+  opacity: 1;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  font-weight: 900;
+}
 
 .container {
   padding: 10px 0 50px 0;
