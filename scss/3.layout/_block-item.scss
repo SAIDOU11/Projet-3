@@ -9,15 +9,17 @@
   overflow: hidden;
   height: 70px;
   width: 100%;
+
+  @media (min-width: 1025px) {
+    width: 95%;
+  }
+
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
   @include mix.shadow;
-  margin: 20px 0;
-  @media (min-width: 1025px) {
-    margin: 20px 20px;
-    width: 90%;
-  }
+  margin: 1rem 0rem;
+
   @keyframes itemanimation {
     0% {
       transform: translateY(50%);
@@ -39,8 +41,7 @@
   animation-fill-mode: both;
 
   &__meal {
-    min-width: 50px;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     @include mix.overflow;
 
     h4,

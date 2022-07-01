@@ -2,19 +2,23 @@
 @use "../2.utilities/variables" as var;
 
 .allmenus-menu {
-  display: grid;
   margin-right: 1rem;
-  padding-right: 1rem;
   grid-template-columns: 1fr;
   min-width: 100%;
   @media (min-width: 1025px) {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.menus-menu {
+  min-width: 100%;
 }
 
 .menus-menu__title {
   text-transform: uppercase;
   position: relative;
+  width: 100%;
   font-weight: 400;
   padding-bottom: 5px;
   margin-top: 10px;
