@@ -14,9 +14,5 @@
     padding: 1rem 1rem;
     font-family: "Shrikhand", cursive;
     @include mix.transition-heart;
-    @media (min-width: 1025px) {
-      @include mix.transition-heart;
-      right: 2rem;
-    }
   }
 }
