@@ -408,9 +408,13 @@ footer {
   }
 }
 .fonction__ol {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.fonction__ol :hover {
+  background-color: rgb(245, 235, 244);
 }
 .fonction__list {
   background-color: #fafafa;
@@ -421,6 +425,9 @@ footer {
   align-items: center;
   margin: 32px;
   position: relative;
+}
+.fonction__list :hover {
+  color: #9356dc;
 }
 @media (min-width: 1250px) {
   .fonction__list {
@@ -445,11 +452,18 @@ footer {
   left: -1em;
   bottom: 2.6em;
 }
-.fonction__icon {
-  color: rgb(94, 89, 89);
-  padding: 20px;
+.fonction__choice {
+  color: black !important;
 }
-.fonction__iconviolet {
+.fonction__icon {
+  cursor: pointer;
+  color: grey;
+  padding: 20px;
+  border-radius: 1.25rem;
+}
+.fonction:hover__icon {
+  cursor: pointer;
+  background-color: rgb(245, 235, 244);
   color: #9356dc;
 }
 

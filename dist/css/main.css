@@ -41,7 +41,7 @@ body {
 
 footer,
 .page-content::after {
-  height: 0px;
+  height: -30px;
 }
 
 .block-item {
@@ -58,9 +58,9 @@ footer,
   box-shadow: 1px 1px 2px 1px rgba(199, 194, 194, 0.5);
   margin: 1rem 0rem;
   -webkit-animation: itemanimation 2s;
-  animation: itemanimation 2s;
+          animation: itemanimation 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 @media (min-width: 1025px) {
   .block-item {
@@ -89,43 +89,43 @@ footer,
 }
 .block-item:nth-child(0) {
   -webkit-animation-delay: 0ms;
-  animation-delay: 0ms;
+          animation-delay: 0ms;
 }
 .block-item:nth-child(1) {
   -webkit-animation-delay: 100ms;
-  animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 .block-item:nth-child(2) {
   -webkit-animation-delay: 200ms;
-  animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .block-item:nth-child(3) {
   -webkit-animation-delay: 300ms;
-  animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 .block-item:nth-child(4) {
   -webkit-animation-delay: 400ms;
-  animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .block-item:nth-child(5) {
   -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .block-item:nth-child(6) {
   -webkit-animation-delay: 600ms;
-  animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .block-item:nth-child(7) {
   -webkit-animation-delay: 700ms;
-  animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 .block-item:nth-child(8) {
   -webkit-animation-delay: 800ms;
-  animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 .block-item:nth-child(9) {
   -webkit-animation-delay: 900ms;
-  animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 .block-item__meal {
   padding: 1rem 1rem;
@@ -181,7 +181,7 @@ footer,
 }
 .block-item:hover i {
   -webkit-animation: transformation 0.8s ease-in-out;
-  animation: transformation 0.8s ease-in-out;
+          animation: transformation 0.8s ease-in-out;
   font-size: 25px;
 }
 
@@ -198,9 +198,9 @@ footer,
   width: 100vw;
   height: 100vh;
   -webkit-animation: loader 0.8s 2s;
-  animation: loader 0.8s 2s;
+          animation: loader 0.8s 2s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @-webkit-keyframes loader {
   to {
@@ -408,9 +408,13 @@ footer {
   }
 }
 .fonction__ol {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.fonction__ol :hover {
+  background-color: rgb(245, 235, 244);
 }
 .fonction__list {
   background-color: #fafafa;
@@ -421,6 +425,9 @@ footer {
   align-items: center;
   margin: 32px;
   position: relative;
+}
+.fonction__list :hover {
+  color: #9356dc;
 }
 @media (min-width: 1250px) {
   .fonction__list {
@@ -445,11 +452,18 @@ footer {
   left: -1em;
   bottom: 2.6em;
 }
-.fonction__icon {
-  color: rgb(94, 89, 89);
-  padding: 20px;
+.fonction__choice {
+  color: black !important;
 }
-.fonction__iconviolet {
+.fonction__icon {
+  cursor: pointer;
+  color: grey;
+  padding: 20px;
+  border-radius: 1.25rem;
+}
+.fonction:hover__icon {
+  cursor: pointer;
+  background-color: rgb(245, 235, 244);
   color: #9356dc;
 }
 
@@ -515,7 +529,7 @@ footer {
   width: 100%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .card__new {
   background-color: #99e2d0;
@@ -560,7 +574,7 @@ footer {
   transform: translateY(-50%);
   color: inherit;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   opacity: 1;
   transition: all 400ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -582,7 +596,7 @@ footer {
   transform: translateY(-50%);
   color: inherit;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   opacity: 1;
   transition: all 400ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -601,9 +615,9 @@ footer {
   width: 100%;
   max-height: 32em;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 .menu-list {
@@ -637,7 +651,7 @@ footer {
   transform: translateY(-50%);
   color: inherit;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   opacity: 1;
   transition: all 400ms ease-in-out;
 }
@@ -658,7 +672,7 @@ footer {
   transform: translateY(-50%);
   color: inherit;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   opacity: 1;
   transition: all 400ms ease-in-out;
   color: transparent;
@@ -668,4 +682,4 @@ footer {
   opacity: 1;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   font-weight: 900;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
