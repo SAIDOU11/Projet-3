@@ -5,6 +5,7 @@
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 30px;
+  color: black;
 
   @media (min-width: 900px) {
     margin-bottom: 50px;
@@ -25,7 +26,7 @@
     padding: 0;
     list-style: none;
     :hover {
-      background-color: rgb(245, 235, 244);
+      background-color: rgb(251, 236, 252);
     }
   }
 
@@ -38,9 +39,7 @@
     align-items: center;
     margin: 32px;
     position: relative;
-    :hover {
-      color: var.$couleur-primaire;
-    }
+    // padding: 1rem;
 
     @media (min-width: 1250px) {
       display: inline;
@@ -62,24 +61,68 @@
       width: 15px;
       position: absolute;
       left: -1em;
-      bottom: 2.6em;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
-  &__choice {
-    color: black !important;
-  }
-
-  &__icon {
+  &__icon1 {
     cursor: pointer;
-    color: grey;
-    padding: 20px;
+    color: black;
     border-radius: 1.25rem;
+
+    &::before {
+      color: grey;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      padding: 20px;
+      content: "\f3cf";
+    }
+    &:hover::before {
+      color: var.$couleur-primaire;
+    }
   }
-  &:hover {
-    &__icon {
-      cursor: pointer;
-      background-color: rgb(245, 235, 244);
+  &__icon2 {
+    cursor: pointer;
+    color: black;
+    border-radius: 1.25rem;
+
+    &::before {
+      color: grey;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      padding: 20px;
+      content: "\f03a";
+    }
+    &:hover::before {
+      color: var.$couleur-primaire;
+    }
+  }
+  &__icon3 {
+    cursor: pointer;
+    color: black;
+    border-radius: 1.25rem;
+
+    &::before {
+      color: grey;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      padding: 20px;
+      content: "\f54e";
+    }
+    &:hover::before {
       color: var.$couleur-primaire;
     }
   }
