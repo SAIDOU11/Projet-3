@@ -39,7 +39,6 @@
     align-items: center;
     margin: 32px;
     position: relative;
-    // padding: 1rem;
 
     @media (min-width: 1250px) {
       display: inline;
@@ -52,7 +51,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: white !important;
       font-size: 10px;
       padding: 3px;
       background-color: var.$couleur-primaire;
@@ -126,6 +125,10 @@
       color: var.$couleur-primaire;
     }
   }
+}
+
+.fonction__list:hover ::before {
+  color: var.$couleur-primaire;
 }
 
 .fonction__responsive {

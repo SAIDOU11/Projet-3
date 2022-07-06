@@ -439,7 +439,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white !important;
   font-size: 10px;
   padding: 3px;
   background-color: #9356dc;
@@ -506,6 +506,10 @@ footer {
   content: "\f54e";
 }
 .fonction__icon3:hover::before {
+  color: #9356dc;
+}
+
+.fonction__list:hover ::before {
   color: #9356dc;
 }
 
